@@ -13,7 +13,7 @@
  • upload the dataframe(merged) on drive
  • train detectron 2 model on dataset
  • save final model on drive
-</pre> 
+</pre>
 
 #### covid_deployment_notebook.ipynb
 <pre> • Download model(mask + person) from drive
@@ -21,6 +21,8 @@
  • Test pipeline on videos
 </pre>
   
+<hr>
+
 #### facemask_using_mobilenet.ipynb
 <pre> • Download datasets from kaggle and https://github.com/chandrikadeb7/Face-Mask-Detection.git
  • Generate labelled dateset by cropping images using bbox present in annotation.
