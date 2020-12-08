@@ -45,7 +45,7 @@ $pip install -r requirements.txt
 ##### For CPU
 <pre>$python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.6/index.html</pre>
 
-#### For GPU
+##### For GPU
 <pre>$python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.6/index.html</pre>
 
 #### Execute streamlit app
