@@ -32,3 +32,18 @@
 	○ Detect face using res10_300x300_ssd_iter_140000 model
    	○ On faces apply our facemask detection model
 </pre>
+
+## Execution
+<pre>
+$python -m venv env
+$pip install --upgrade pip
+$pip install -r requirements.txt
+</pre>
+
+<b>For CPU</b>
+<pre>$python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.6/index.html</pre>
+
+<b>For GPU</b>
+<pre>$python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.6/index.html</pre>
+
+<pre>$streamlit run app.py</pre>
