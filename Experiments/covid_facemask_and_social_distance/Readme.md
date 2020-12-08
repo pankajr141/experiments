@@ -34,16 +34,19 @@
 </pre>
 
 ## Execution
+
+#### Env and Package install - Python 3.6.8
 <pre>
 $python -m venv env
 $pip install --upgrade pip
 $pip install -r requirements.txt
 </pre>
 
-<b>For CPU</b>
+##### For CPU
 <pre>$python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.6/index.html</pre>
 
-<b>For GPU</b>
+#### For GPU
 <pre>$python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.6/index.html</pre>
 
+#### Execute streamlit app
 <pre>$streamlit run app.py</pre>
