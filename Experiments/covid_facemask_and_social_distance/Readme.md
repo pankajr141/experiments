@@ -37,17 +37,19 @@
 
 #### Env and Package install - Python 3.6.8
 <pre>
-$python -m venv env
-$source env/bin/activate
-$pip install --upgrade pip
-$pip install -r requirements.txt
+$ python -m venv env
+$ source env/bin/activate
+
+$ pip install --upgrade pip
+$ wget https://github.com/pankajr141/experiments/blob/master/Experiments/covid_facemask_and_social_distance/source/requirements.txt
+$ pip install -r requirements.txt
 </pre>
 
 ##### For CPU
-<pre>$python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.6/index.html</pre>
+<pre>$ python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.6/index.html</pre>
 
 ##### For GPU
-<pre>$python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.6/index.html</pre>
+<pre>$ python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.6/index.html</pre>
 
 #### Execute streamlit app
-<pre>$streamlit run app.py</pre>
+<pre>$ streamlit run https://github.com/pankajr141/experiments/blob/master/Experiments/covid_facemask_and_social_distance/source/app.py</pre>
