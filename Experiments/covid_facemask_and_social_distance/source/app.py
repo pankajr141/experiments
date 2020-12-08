@@ -1,6 +1,7 @@
 import os
 import io
 import cv2
+import requests
 import streamlit as st
 from datetime import datetime
 import detect
@@ -19,12 +20,26 @@ def input_file_selector(folder_path='.'):
     selected_filename = st.sidebar.selectbox('Select an processed video file (mp4/webm)', filenames)
     return os.path.join(folder_path, selected_filename)
 
+def download_files():
+    if not os.path.exists('detect.py'):
+        url = 'https://raw.github.com/pankajr141/experiments/master/Experiments/covid_facemask_and_social_distance/source/detect.py'
+        r = requests.get(url, allow_redirects=True)
+        open('detect.py', 'wb').write(r.content)
+
+    if not os.path.exists('functions.py'):
+        url = 'https://raw.github.com/pankajr141/experiments/master/Experiments/covid_facemask_and_social_distance/source/functions.py'
+        r = requests.get(url, allow_redirects=True)
+        open('functions.py', 'wb').write(r.content)
+
 @st.cache(allow_output_mutation=True)
 def get_static_store():
     return {}
 
 def main():
     static_store = get_static_store()
+
+    # Download files neccessary for model execution
+    download_files()
 
     global predictor
     cfg, predictor, _ = detect.load_models()

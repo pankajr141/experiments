@@ -41,8 +41,7 @@ $ python -m venv env
 $ source env/bin/activate
 
 $ pip install --upgrade pip
-$ wget https://github.com/pankajr141/experiments/blob/master/Experiments/covid_facemask_and_social_distance/source/requirements.txt
-$ pip install -r requirements.txt
+$ pip install -r https://raw.github.com/pankajr141/experiments/master/Experiments/covid_facemask_and_social_distance/source/requirements.txt
 </pre>
 
 ##### For CPU
