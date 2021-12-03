@@ -18,7 +18,7 @@ Focus of the experimentation is on the Geographical expect and the application w
 | Experiment [2] {Spatial} - <br/>Geospatial_congestion_detection_chicago_bus.ipynb | Detecting Congestion using GeoSpatial Coordinates (Lat/Lon) and having a birdeye view through maps | [Problem Video](https://www.youtube.com/watch?v=D3QxN_DYwFo)<br>[Solution Video](https://www.youtube.com/watch?v=k9rz-YOJIvE)|
 
 
-## Media
+## Vision
 Focus of the experimentation is on the Media expect (image/video).
 
 |IPynb Name | Description | Video and Blog Links
