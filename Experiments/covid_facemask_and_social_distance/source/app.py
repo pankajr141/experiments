@@ -4,8 +4,11 @@ import cv2
 import requests
 import streamlit as st
 from datetime import datetime
-import detect
 import hashlib
+
+import sys
+print(os.getcwd())
+sys.path.append(os.getcwd())
 
 def detect_face_mask(filename):
     print("Detect face mask . Input File ",filename)
@@ -31,6 +34,18 @@ def download_files():
         r = requests.get(url, allow_redirects=True)
         open('functions.py', 'wb').write(r.content)
 
+    if not os.path.exists('covid_1.mp4'):
+        url = 'https://raw.github.com/pankajr141/experiments/master/Experiments/covid_facemask_and_social_distance/source/covid_1.mp4'
+        r = requests.get(url, allow_redirects=True)
+        open('covid_1.mp4', 'wb').write(r.content)
+
+def download_model():
+    import gdown
+    uri = "https://drive.google.com/uc?id=1aChWvlavWmk-4kWIAkj9arzK_ayzd4mr"
+    modelpath = "model_facemask_n_socialdistance.pth"
+    if not os.path.exists(modelpath):
+        gdown.download(uri, modelpath, quiet=False)
+
 @st.cache(allow_output_mutation=True)
 def get_static_store():
     return {}
@@ -40,7 +55,10 @@ def main():
 
     # Download files neccessary for model execution
     download_files()
+    download_model()
 
+    import detect
+    
     global predictor
     cfg, predictor, _ = detect.load_models()
     st.title("Facemask and Social Distancing detector")
