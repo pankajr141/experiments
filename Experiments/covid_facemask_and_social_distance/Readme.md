@@ -35,6 +35,8 @@
 
 ## Execution
 
+[![Installation video](https://github.com/pankajr141/experiments/blob/master/Experiments/covid_facemask_and_social_distance/source/installation.png)](https://www.youtube.com/watch?v=4APNCxkw0RU&t=391s)
+
 #### Env and Package install - Python 3.6.8
 <pre>
 $ python3 -m venv env
