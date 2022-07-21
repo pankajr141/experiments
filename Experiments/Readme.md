@@ -16,6 +16,7 @@ Focus of the experimentation is on the Geographical expect and the application w
 |IPynb Name | Description | Video and Blog Links
 | --- | --- | --- |
 | Experiment [2] - Geospatial_congestion_detection_chicago_bus.ipynb | Detecting Congestion using GeoSpatial Coordinates (Lat/Lon) and having a birdeye view through maps | [Problem Video](https://www.youtube.com/watch?v=D3QxN_DYwFo)<br>[Solution Video](https://www.youtube.com/watch?v=k9rz-YOJIvE)|
+|Experiment [5] {Vision} - Enhancing image quality using machine learning.ipynb| Enhancing image quality using SR GAN based custom model | [Problem Video](https://www.youtube.com/watch?v=8S-ECdl_RHg)
 
 
 ## Vision
