@@ -1,6 +1,6 @@
 torch==1.6.0
 torchvision==0.7.0
 gdown==4.2.0
-streamlit==0.67.1
+streamlit==1.11.1
 opencv-python==4.4.0.46
 scipy==1.5.4
