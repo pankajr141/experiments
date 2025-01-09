@@ -14,8 +14,10 @@ They examine interesting regions of the search space, then perform local searche
 # examples of metaheuristic algorithms include: 
 * <b>Genetic Algorithm (GA) </b> \
 Inspired by natural selection and genetics, GA starts by randomly generating a population of solutions, then evolves it using operators like selection, crossover, and mutation.
-* <b>Particle Swarm Optimization (PSO) </b> \
+* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic%20algorithms/ch1%20-%20Particle%20swarm%20optimization.mdx" target="_blank">Particle Swarm Optimization (PSO)</a></b> \
 Inspired by the collective behaviour of social organisms, PSO starts by randomly generating a swarm of particles, each representing a potential solution.
+* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic%20algorithms/ch2%20-%20Ant%20colony%20optimization.mdx" target="_blank">Ant Colony Optimization (ACO)</a></b>\
+Mimics the behavior of ants finding the shortest path to food sources.
 * <b>Simulated Annealing (SA) </b> \
 Inspired by the annealing process in metallurgy, SA starts by randomly generating an initial solution, then gradually reduces the temperature of the system.
 * <b>Tabu Search (TS) </b> \
