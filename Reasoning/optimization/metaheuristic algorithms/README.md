@@ -14,13 +14,13 @@ They examine interesting regions of the search space, then perform local searche
 # examples of metaheuristic algorithms include: 
 ## Evolutionary Algorithms
 Inspired by natural evolution processes like mutation, recombination, and selection.
-
 * <b>Genetic Algorithm (GA) </b> \
 Inspired by natural selection and genetics, GA starts by randomly generating a population of solutions, then evolves it using operators like selection, crossover, and mutation.
 * <b>Differential Evolution (DE)</b> \
 Focuses on population-based optimization with differences between vectors driving evolution.
 
 ## Swarm Intelligence-Based Algorithms
+Inspired by the collective behavior of social animals or organisms.
 * <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic%20algorithms/ch1%20-%20Particle%20swarm%20optimization.mdx" target="_blank">Particle Swarm Optimization (PSO)</a></b> \
 Inspired by the collective behaviour of social organisms, PSO starts by randomly generating a swarm of particles, each representing a potential solution.
 * <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic%20algorithms/ch2%20-%20Ant%20colony%20optimization.mdx" target="_blank">Ant Colony Optimization (ACO)</a></b>\
@@ -31,6 +31,7 @@ Inspired by the foraging behavior of bees.
 Based on the flashing behavior of fireflies to attract others.
 
 ## Physics-Based Algorithms
+Inspired by physical processes and phenomena.
 * <b>Simulated Annealing (SA) </b> \
 Inspired by the annealing process in metallurgy, SA starts by randomly generating an initial solution, then gradually reduces the temperature of the system.
 * <b>Gravitational Search Algorithm (GSA) </b> \
