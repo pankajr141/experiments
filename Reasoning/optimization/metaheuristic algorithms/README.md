@@ -1,7 +1,7 @@
 Metaheuristic algorithms are a class of optimization algorithms that are used to find solutions to complex problems
 They are designed to find good solutions to problems that are difficult to solve to optimality, often with limited resources
 
-Metaheuristics are typically defined by their heuristic nature, emphasizing exploration and exploitation <b>without necessarily modeling the objective function probabilistically or statistically</b>
+Metaheuristics are typically defined by their heuristic nature, emphasizing exploration and exploitation  <b><i>(trial and error)</i> without necessarily modeling the objective function probabilistically or statistically</b>
 
 # characteristics of metaheuristic algorithms
 * <b>Stochastic </b> \
