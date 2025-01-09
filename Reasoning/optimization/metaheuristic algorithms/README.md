@@ -58,7 +58,8 @@ Inspired by the echolocation behavior of bats.
 
 ## Human-Inspired Algorithms
 Inspired by human problem-solving behavior.
-
+* <b>Tabu Search (TS) </b> \
+Inspired by the concept of memory in human decision-making, TS starts by randomly generating an initial solution, then searches the neighbourhood of the solution by applying operators like swapping or reversing.
 * <b>Teaching-Learning-Based Optimization (TLBO) </b> \
 Models the teaching and learning process in a classroom.
 * <b>Cultural Algorithm </b> \
@@ -70,7 +71,3 @@ Combine features of multiple metaheuristics to leverage their strengths.
 Combines genetic algorithms and particle swarm optimization.
 * <b>ACO-PSO Hybrid </b> \
 Combines ant colony optimization and particle swarm optimization.
-
-# Others
-* <b>Tabu Search (TS) </b> \
-Inspired by the concept of memory in human decision-making, TS starts by randomly generating an initial solution, then searches the neighbourhood of the solution by applying operators like swapping or reversing.
