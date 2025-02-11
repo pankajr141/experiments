@@ -1,0 +1,97 @@
+# Introduction
+The Gravitational Search Algorithm (GSA) is a physics-based algorithm that uses Newton's law of gravitation to solve optimization problems.
+
+* GSA is classified under population-based method
+* Based on law of gravity and mass interactions
+* Solutions in GSA are called as agents, these agent interact with each other through gravity force.
+* Performance of each agent in population is measured by its mass.
+* Each agent (object) move towards other agents (objects) due to gravity force
+* This step represent global movements (exploration step) of the object, while the agent with heavier mass move slowly (exploitation step).
+* Best solution is the solution with heavier mass
+
+In GSA, the agent has four parameters which are 
+* position
+* inertial mass
+* active gravitational mass
+* passive gravitational mass
+
+GSA is a memory-less algorithm. However, it works efficiently like the algorithms with memory
+
+# Algorithm
+![Gravitational Search Algorithm](https://raw.githubusercontent.com/pankajr141/images/refs/heads/main/gravitational_search_algorithm.png)
+
+#### 1. Initialization
+   * Each agent in the algorithm has a mass and position.
+   * N agents are randomly generated and position of each agent is determined as
+     
+     <pre>
+     X<sub>i</sub>(t) = (x<sub>i</sub><sup>1</sup>(t), x<sub>i</sub><sup>2</sup>(t), ..., x<sub>i</sub><sup>N</sup>(t))
+     </pre>
+   * Initial values for Gravitation constant (G<sub>o</sub>), α, E and iteration counter t are set.
+#### 2. Attraction
+   * Particles with lower masses move towards particles with higher masses
+#### 3. Iteration: 
+   * All agents in population are evaluated best, worst agents are assigned.
+   * Gravitation constant (G<sub>o</sub>) is updated
+     <pre>
+     G(t) = G<sub>o</sub> e<sup>-αt/T</sup>
+     </pre>
+   * Based on Law of Gravity Force between 2 objects is calculated as
+     
+     <pre>
+     F = G<sub>o</sub> * M1 * M2 / R<sup>2</sup>
+
+     G<sub>o</sub> - Gravitational constant
+     M1 - Mass of 1st object
+     M2 - Mass of 2nd object
+     R - Distance between objects
+     </pre>
+
+     In case of Agents gravitional force F<sub>ij</sub> that action on mass i by mass j is defined as
+
+     In case of agent j which act in agent i with force, at time (t), force is calculated as
+     <pre>
+     F<sub>ij</sub><sup>d</sup> = G(t) * M<sub>pi</sub>(t) * M<sub>aj</sub>(t) * (x<sub>j</sub><sup>d</sup>(t) - x<sub>i</sub><sup>d</sup>(t)) / R<sub>ij</sub>(t)<sup>2</sup> + E
+
+     M<sub>pi</sub>(t) - Passive gravitational mass of agent i
+     M<sub>aj</sub>(t) - Active gravitational mass of agent j
+     G(t) - gravitational constant
+     </pre>
+
+     Above is force action on agent i due to j, similarly we calculate total force by evaluating with all agents and take K agents with best fitness value and biggest mass.
+   * Accelaration is calculated as follows
+
+     According to Newton second law, when a force F is applied to an object, the object moves with accelation a depending on applied Force F and object mass M as
+     
+     <pre>
+     a = F / M
+     </pre>
+
+     Hence the accelation of object (agent) i is computed as follows
+
+     <pre>
+     a<sub>i</sub> = F<sub>ij</sub> / M<sub>ii</sub>
+     </pre>
+   * Velocity is calculated as follows
+
+     <pre>
+     V<sub>i</sub>(t+1) = rand<sub>i</sub> x V<sub>i</sub>(t) + a<sub>i</sub>(t)
+     </pre>
+   * Position (new) is calculated as follows
+     <pre>
+     X<sub>i</sub>(t+1) = rand<sub>i</sub> x X<sub>i</sub>(t) + a<sub>i</sub>(t)
+     </pre>  
+   * The algorithm iterates, and the population eventually gathers around the particles with the highest quality
+#### 4. Convergence
+   * The algorithm converges to the global optimal solution
+
+# Applications
+* Power system optimization
+* Controller design
+* Network routing
+* Sensor networks
+* Software design
+* Microgrid design
+
+# References
+1. https://www.slideshare.net/slideshow/gravitational-search-algorithm-gsa-pptx/269920222
