@@ -51,6 +51,7 @@ class GoogleSearchNewsURLExtractor:
 
             # verify that URL must contain keyword
             url_list = list(filter(lambda url: _keyword_present_in_url(url, keyword), url_list))
+            url_list = list(set(url_list))
 
             # Filter out unwanted URLs (e.g., PDFs or XMLs) and remove duplicates
             url_list = list(dict.fromkeys(url_list))
