@@ -21,9 +21,9 @@ Focuses on population-based optimization with differences between vectors drivin
 
 ## Swarm Intelligence-Based Algorithms
 Inspired by the collective behavior of social animals or organisms.
-* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic%20algorithms/ch1%20-%20Particle%20swarm%20optimization.mdx" target="_blank">Particle Swarm Optimization (PSO)</a></b> \
+* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic_algorithms/ch1_particle_swarm_optimization.mdx" target="_blank">Particle Swarm Optimization (PSO)</a></b> \
 Inspired by the collective behaviour of social organisms, PSO starts by randomly generating a swarm of particles, each representing a potential solution.
-* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic%20algorithms/ch2%20-%20Ant%20colony%20optimization.mdx" target="_blank">Ant Colony Optimization (ACO)</a></b>\
+* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic_algorithms/ch2_ant_colony_optimization.mdx" target="_blank">Ant Colony Optimization (ACO)</a></b>\
 Mimics the behavior of ants finding the shortest path to food sources.
 * <b>Artificial Bee Colony (ABC): </b> \
 Inspired by the foraging behavior of bees.
