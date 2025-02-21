@@ -1,3 +1,3 @@
 # Architecture details
 
-<img src="https://raw.githubusercontent.com/pankajr141/images/stock_recommender/architecture.png">
+![Architecture](https://raw.githubusercontent.com/pankajr141/images/refs/heads/main/stock_recommender/architecture.png)
