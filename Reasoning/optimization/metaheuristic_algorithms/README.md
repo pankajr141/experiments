@@ -34,7 +34,8 @@ Based on the flashing behavior of fireflies to attract others.
 Inspired by physical processes and phenomena.
 * <b>Simulated Annealing (SA) </b> \
 Inspired by the annealing process in metallurgy, SA starts by randomly generating an initial solution, then gradually reduces the temperature of the system.
-* <b>Gravitational Search Algorithm (GSA) </b> \
+* <b></b> \
+* <b><a href="https://github.com/pankajr141/experiments/blob/master/Reasoning/optimization/metaheuristic_algorithms/ch3_gravitational_search_algorithm.mdx" target="_blank">Gravitational Search Algorithm (GSA)</a></b>\
 Simulates the motion of masses under gravitational attraction.
 * <b>Harmony Search (HS) </b> \
 Based on musical improvisation processes.
